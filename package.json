@@ -1,0 +1,19 @@
+999{
+  "name": "barbershop",
+  "version": "1.0.0",
+  "description": "Design and frontend of awesome project.\r 2017",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorKurkov/barbershop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorKurkov/barbershop/issues"
+  },
+  "homepage": "https://github.com/IgorKurkov/barbershop#readme"
+}
