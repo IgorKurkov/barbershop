@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "ptsans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ptsansnarrow/ptsansnarrow.eot");
+  src: url("../fonts/ptsansnarrow/ptsansnarrow.eot?#iefix") format("embedded-opentype"), url("../fonts/ptsansnarrow/ptsansnarrow.woff") format("woff"), url("../fonts/ptsansnarrow/ptsansnarrow.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "ptsans";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/ptsansnarrow/ptsansnarrowbold.eot");
+  src: url("../fonts/ptsansnarrow/ptsansnarrowbold.eot?#iefix") format("embedded-opentype"), url("../fonts/ptsansnarrow/ptsansnarrowbold.woff") format("woff"), url("../fonts/ptsansnarrow/ptsansnarrowbold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "ptsans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ptsansnarrow/ptsansnarrow.eot");
+  src: url("../fonts/ptsansnarrow/ptsansnarrow.eot?#iefix") format("embedded-opentype"), url("../fonts/ptsansnarrow/ptsansnarrow.woff") format("woff"), url("../fonts/ptsansnarrow/ptsansnarrow.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "ptsans";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/ptsansnarrow/ptsansnarrowbold.eot");
+  src: url("../fonts/ptsansnarrow/ptsansnarrowbold.eot?#iefix") format("embedded-opentype"), url("../fonts/ptsansnarrow/ptsansnarrowbold.woff") format("woff"), url("../fonts/ptsansnarrow/ptsansnarrowbold.ttf") format("truetype"); }
+
+.main-navigation {
+  position: relative;
+  background: #000; }
+  .main-navigation ul {
+    margin: 0;
+    padding: 0; }
+  .main-navigation .login {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .main-navigation li, .main-navigation .login {
+    display: inline-block;
+    padding: 25px;
+    transition: ease .3s; }
+    .main-navigation li:hover, .main-navigation .login:hover {
+      background-color: #212121; }
+  .main-navigation a {
+    font-weight: bold; }
+
+.index-logo {
+  text-align: center;
+  padding-top: 60px; }
+
+.features {
+  margin: 20px; }
+  .features .feature-item {
+    width: 33.3%;
+    float: left;
+    text-align: center; }
+    .features .feature-item p {
+      padding: 10px; }
+    .features .feature-item .feature-title {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 28px;
+      padding-bottom: 15px; }
+    .features .feature-item .icon-diamond {
+      margin: auto;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-bottom-color: white;
+      position: relative;
+      top: -15px; }
+      .features .feature-item .icon-diamond:before {
+        content: '';
+        position: absolute;
+        left: -15px;
+        top: 15px;
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-top-color: white; }
+
+body {
+  max-width: 980px;
+  margin: 0 auto;
+  font-family: "ptsans";
+  background: #000 url("../assets/tint.png") no-repeat;
+  color: white; }
+  body a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase; }

@@ -7,7 +7,8 @@ var gulp           = require('gulp'),
     notify         = require('gulp-notify'),
     plumber        = require('gulp-plumber'),
     concat         = require('gulp-concat'),
-    uglify         = require('gulp-uglify');
+    uglify         = require('gulp-uglify'),
+    fileinclude    = require('gulp-file-include');
 
 //start server
 gulp.task('start-server', function(){
@@ -47,11 +48,19 @@ gulp.task('scripts', ['common-js'], function() {
         .pipe(gulp.dest('app/js'))
         .pipe(browserSync.reload({stream: true}));
 });
-
+gulp.task('html', function(){
+    return gulp.src('app/template/index.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: 'app/template'
+        }))
+        .pipe(gulp.dest('app'))
+        .pipe(browserSync.reload({stream: true}));
+});
 //main watch command
-gulp.task('w', ['sass', 'common-js', 'scripts', 'start-server'], function(){
+gulp.task('default', ['html', 'sass', 'common-js', 'scripts', 'start-server'], function(){
     gulp.watch('app/sass/**/*.sass', ['sass']);
     gulp.watch('app/js/**/*.js', ['common-js', 'scripts']);
-    gulp.watch('app/*.html', browserSync.reload);
+    gulp.watch('app/**/*.html', ['html', browserSync.reload]);
 });
 

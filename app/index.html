@@ -1,15 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Barbershop BORODINSKI</title>
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
+
 <body>
-Hello world
+    <header class="main-header">
+  <div class="container">
+      <nav class="main-navigation">
+          <ul>
+              <li><a href="#">Информация</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Прайс-лист</a></li>
+              <li><a href="#">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="user-block">
+              <a href="#" class="login">Вход</a>
+          </div>
+      </nav>
 
-ffcvbcvb
+  </div>
+</header>
+
+    
+  <div class="index-logo">
+      <img src="assets/BORODINSKI-Logo.png" alt='Барбершоп "Бородинский"'>
+  </div>
+
+  <section class="features">
+      <div class="feature-item">
+          <div class="feature-title">Быстро</div>
+          <div class="icon-diamond"></div>
+          <p>
+              МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!
+          </p>
+      </div>
+      <div class="feature-item">
+          <div class="feature-title">Круто</div>
+          <div class="icon-diamond"></div>
+          <p>
+              ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+          </p>
+      </div>
+      <div class="feature-item">
+          <div class="feature-title">Дорого</div>
+          <div class="icon-diamond"></div>
+          <p>
+              НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?
+          </p>
+      </div>
+  </section>
 
 
+    <section class="index-content">
+  <div class="index-content-left">
+      <h2 class="index-content-title">Новости</h2>
+      <ul class="news-preview">
+          <li>
+              <p>
+                  НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+              </p>
+              <time datetime="">11 января</time>
+          </li>
+          <li>
+              <p>
+                  В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
+              </p>
+              <time datetime="">18 января</time>
+          </li>
+      </ul>
+  </div>
+  <div class="index-content-right">
+      <h2 class="index-content-title">Фотогалерея</h2>
+      <figure class="gallery-content">
 
+          <img src="" alt="">
+
+      </figure>
+      <button class="btn gallery-prev">Назад</button>
+      <button class="btn gallery-next">Вперед </button>
+
+  </div>
+</section>
+
+    <section class="index-content">
+  
+              <div class="index-content-left">
+                  <h2 class="index-content-title">Контактная информация</h2>
+                  <p>
+                      БАРБЕРШОП «БОРОДИНСКИЙ» <br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br> ТЕЛЕФОН: +7 (495) 666-02-66
+                  </p>
+                  <p>
+                      ВРЕМЯ РАБОТЫ:<br> ПН — ПТ: С 10:00 ДО 22:00<br> СБ — ВС: С 10:00 ДО 19:00
+                  </p>
+                  <a href="">как проехать</a>
+                  <a href="">Обратная связь</a>
+              </div>
+  
+              <div class="index-content-right">
+                  <h2 class="index-content-title">Записаться</h2>
+  
+              </div>
+              <p>
+                  УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+              </p>
+              <form action="PHP_SELF" class="appointment-form" method="post">
+                  <input type="text" name="date" value="" placeholder="Дата">
+                  <input type="time" name="time" value="" placeholder="Время">
+                  <input type="text" name="name" value="" placeholder="Телефон" pattern="2[0-9]{3}-[0-9]{3}">
+                  <input type="text" name="phone" value="" placeholder="Ваше имя">
+                  <button class="btn" type="submit"></button>
+              </form>
+          </section>
+
+    <script src="js/common.min.js"></script>
 </body>
+
 </html>
